@@ -1,0 +1,13 @@
+C:\Users\mohsen\Documents\Visual Studio 2017\Projects\Server-Client\One-Time-Pad\Server\Server\bin\Debug\Server.exe.config
+C:\Users\mohsen\Documents\Visual Studio 2017\Projects\Server-Client\One-Time-Pad\Server\Server\bin\Debug\Server.exe
+C:\Users\mohsen\Documents\Visual Studio 2017\Projects\Server-Client\One-Time-Pad\Server\Server\bin\Debug\Server.pdb
+C:\Users\mohsen\Documents\Visual Studio 2017\Projects\Server-Client\One-Time-Pad\Server\Server\obj\Debug\Server.csprojAssemblyReference.cache
+C:\Users\mohsen\Documents\Visual Studio 2017\Projects\Server-Client\One-Time-Pad\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\mohsen\Documents\Visual Studio 2017\Projects\Server-Client\One-Time-Pad\Server\Server\obj\Debug\Server.exe
+C:\Users\mohsen\Documents\Visual Studio 2017\Projects\Server-Client\One-Time-Pad\Server\Server\obj\Debug\Server.pdb
+C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Server\Server\bin\Debug\Server.exe.config
+C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Server\Server\bin\Debug\Server.exe
+C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Server\Server\bin\Debug\Server.pdb
+C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Server\Server\obj\Debug\Server.exe
+C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Server\Server\obj\Debug\Server.pdb

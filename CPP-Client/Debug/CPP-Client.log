@@ -1,0 +1,17 @@
+﻿  pch.cpp
+  AES.cpp
+  Client.cpp
+c:\users\mohsen\documents\visual studio 2017\projects\serverclient\onetimepad\server\cpp-client\client.cpp(70): warning C4018: '<': signed/unsigned mismatch
+  CPP-Client.cpp
+  OTP.cpp
+c:\users\mohsen\documents\visual studio 2017\projects\serverclient\onetimepad\server\cpp-client\otp.cpp(17): warning C4018: '<': signed/unsigned mismatch
+c:\users\mohsen\documents\visual studio 2017\projects\serverclient\onetimepad\server\cpp-client\otp.cpp(11): warning C4101: 'j': unreferenced local variable
+c:\users\mohsen\documents\visual studio 2017\projects\serverclient\onetimepad\server\cpp-client\otp.cpp(49): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+libeay32.lib(mem_clr.obj) : warning LNK4099: PDB 'vc140.pdb' was not found with 'libeay32.lib(mem_clr.obj)' or at 'C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Server\Debug\vc140.pdb'; linking object as if no debug info
+libeay32.lib(sha256.obj) : warning LNK4099: PDB 'vc140.pdb' was not found with 'libeay32.lib(sha256.obj)' or at 'C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Server\Debug\vc140.pdb'; linking object as if no debug info
+libeay32.lib(aes_misc.obj) : warning LNK4099: PDB 'vc140.pdb' was not found with 'libeay32.lib(aes_misc.obj)' or at 'C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Server\Debug\vc140.pdb'; linking object as if no debug info
+libeay32.lib(aes_core.obj) : warning LNK4099: PDB 'vc140.pdb' was not found with 'libeay32.lib(aes_core.obj)' or at 'C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Server\Debug\vc140.pdb'; linking object as if no debug info
+libeay32.lib(aes_cbc.obj) : warning LNK4099: PDB 'vc140.pdb' was not found with 'libeay32.lib(aes_cbc.obj)' or at 'C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Server\Debug\vc140.pdb'; linking object as if no debug info
+libeay32.lib(cbc128.obj) : warning LNK4099: PDB 'vc140.pdb' was not found with 'libeay32.lib(cbc128.obj)' or at 'C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Server\Debug\vc140.pdb'; linking object as if no debug info
+  CPP-Client.vcxproj -> C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Server\Debug\CPP-Client.exe
