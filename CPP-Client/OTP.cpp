@@ -24,8 +24,8 @@ std::string OTP::encrypt(std::string plainText) {
 
 
 	// Decrypt key
-	AESENC aes;
-	key = aes.Decryption(key);
+//	AESENC aes;
+//	key = aes.Decryption(key);
 
 	// Encrypt message
 	encrypt = xorString(plainText, key);
@@ -64,8 +64,8 @@ std::string OTP::decrypt(std::string cipherText) {
 	key = findKey(id);
 
 	// Decrypt key
-	AESENC aes;
-	key = aes.Decryption(key);
+//	AESENC aes;
+//	key = aes.Decryption(key);
 
 	// Decrypt response with xor key and cipher text
 	decrypt = xorString(cipher, key);
@@ -105,7 +105,7 @@ std::string OTP::nextKey() {
 	std::stringstream ss;
 	int rnd;
 	rnd = createRand();
-	rnd = 0;
+	rnd = 2;
 	ss << rnd;
 	rndstr = ss.str();
 	rndstr.append("#");
@@ -164,5 +164,6 @@ std::string OTP::createMAC(std::string& str) {
 
 // Rand number generator
 int OTP::createRand() {
-	return 2 * (rand() % 2);
+//	return 2 * (rand() % 2);
+	return 2;
 }

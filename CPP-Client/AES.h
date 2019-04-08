@@ -11,6 +11,7 @@
 class AESENC
 {
 public:
+	std::string Encryption(char *message);
 	std::string Decryption(std::string);
 };
 

@@ -119,16 +119,16 @@ namespace Server
                     Console.WriteLine("\nRead {0} bytes from socket. \n Data : {1}",
                         decryptMessage.Length, decryptMessage);
 
-                    string response = decryptMessage.ToUpper();
+                     string response = decryptMessage.ToUpper();
 
-                    Console.WriteLine("\nWrite {0} bytes to socket. \n Data : {1}\n",
-                         response.Length, response);
+                     Console.WriteLine("\nWrite {0} bytes to socket. \n Data : {1}\n",
+                          response.Length, response);
 
                     string encryptRespons = OTP.encrypt(response);
 
                     // Echo the data back to the client.  
                     Send(handler, encryptRespons);
-                    Console.Read();
+                     Console.Read();
                 }
                 else
                 {

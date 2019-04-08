@@ -21,9 +21,9 @@ namespace Server
                     for (int i = 0; i < numRows; i++)
                     {
                         rd = rnd.Next(0, 99999).ToString("D5");
-                        s = AES.Encrypt(rd);
-                        sw.WriteLine("#" + i + "#" + s);
-                        sw.WriteLine();
+                       // s = AES.Encrypt(rd);
+                        sw.WriteLine("#" + i + "#" + rd);
+                        //sw.WriteLine();
                     }
                 }
                 return true;

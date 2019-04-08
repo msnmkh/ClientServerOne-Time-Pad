@@ -61,10 +61,10 @@ void Client::sendMessage(std::string message) {
 	char temp[63];
 	ZeroMemory(temp, sizeof(temp));
 
-	// Receive response of server
+   // Receive response of server
 	int inDataLength = recv(server,temp,sizeof(temp),0);
 
-	// Decrypt response
+    // Decrypt response
 	std::string decryptedResponse = otp.decrypt(temp);
 	std::cout << "Response message is :\t";
 	for (int j = 0; j < decryptedResponse.length(); j++)

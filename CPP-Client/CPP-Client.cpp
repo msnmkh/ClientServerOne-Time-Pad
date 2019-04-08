@@ -4,6 +4,7 @@
 #include "pch.h"
 #include "Client.h"
 #include <iostream>
+#include "AES.h"
 
 int main()
 {
@@ -22,6 +23,15 @@ int main()
 	client.sendMessage(message);
 
 
+//	AESENC aes;
+//
+//	
+//	char *charMessage = new char[message.size() + 1];
+//	strcpy(charMessage, message.c_str());
+//
+//    std::string f = aes.Encryption(charMessage);
+//   std::string fsa = aes.Decryption(f);
+//	std::cout << fsa;
 
 	return 0;
 

@@ -12,17 +12,16 @@ namespace Server
         public static string encrypt(string plainText)
         {
             string id, cipherText, key, MAC, result;
-
             // Split key and id 
             key = nextKey();
-            id = key.Substring(0, (key.Length - key.Substring(key.IndexOf('#') + 1).Length) - 1);
+            id = key.Substring(1, 1);
 
             // Find Encrypt key in keys.txt
-            key = key.Substring(key.IndexOf('#') + 1);
+            key = key.Substring(3, key.Length - 3);
 
             // Decrypt key 
-            byte[] k = Encoding.ASCII.GetBytes(key);
-            key = AES.Decrypt(k);
+            //     byte[] k = Encoding.ASCII.GetBytes(key);
+            //      key = AES.Decrypt(k);
 
             // Create cipher Text
             cipherText = xorString(plainText, key);
@@ -31,7 +30,6 @@ namespace Server
             MAC = createMac(cipherText);
 
             result = "ID:" + id + "enc:" + cipherText + "MAC:" + MAC;
-
             return result;
         }
 
@@ -61,8 +59,8 @@ namespace Server
             key = findKEY(id);
 
             // Decrypt key
-            byte[] k = Encoding.ASCII.GetBytes(key);
-            key = AES.Decrypt(k);
+         //   byte[] k = Encoding.ASCII.GetBytes(key);
+         //   key = AES.Decrypt(k);
 
             // Decrypt cipher text
             decrypt = xorString(cipher, key);
@@ -105,8 +103,8 @@ namespace Server
                 {
                     while ((line = file.ReadLine()) != null)
                     {
-                        foreach (string lne in File.ReadLines($"C:\\Users\\mohsen\\Documents\\Visual Studio 2017\\Projects\\ServerClient\\OneTimePad\\Server\\key\\serverSelectedKeys.txt"))
-                            if (lne == line) continue;
+                    //    foreach (string lne in File.ReadLines($"C:\\Users\\mohsen\\Documents\\Visual Studio 2017\\Projects\\ServerClient\\OneTimePad\\Server\\key\\serverSelectedKeys.txt"))
+                      //      if (lne == line) continue;
 
                         if (line.Contains("#3#"))
                         {
@@ -121,7 +119,7 @@ namespace Server
                 }
             }
 
-            line = line.Substring(3,line.Length-3);
+          //  line = line.Substring(2,line.Length-3);
 
             return line;
         }

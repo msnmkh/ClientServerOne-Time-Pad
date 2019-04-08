@@ -7,6 +7,30 @@ unsigned char userkey[] = { 182,131,35,156,149, 66, 53, 237, 238, 163, 214, 71, 
 unsigned char outdata[AES_BLOCK_SIZE];
 
 
+std::string AESENC::Encryption(char *message) {
+	// Set encryption key
+	AES_set_encrypt_key(userkey, 256, &key);
+
+	unsigned char ivec[AES_BLOCK_SIZE];
+	memcpy(ivec, IV, AES_BLOCK_SIZE);
+
+	// Start bit to encrypt
+	int postion = 0;
+
+	// Get len of message
+	int bytes_read = strlen(message);
+
+	// Encrypt Message .
+	AES_cbc_encrypt((unsigned char *)message, outdata, bytes_read, &key, ivec, AES_ENCRYPT);
+	
+	std::stringstream as;
+	
+	for (int i = 0; i < AES_BLOCK_SIZE; i++)
+		as << outdata[i];
+
+	return as.str();
+}
+
 std::string AESENC::Decryption(std::string message) {
 	// Set encryption key
 	AES_set_decrypt_key(userkey, 256, &key);
@@ -16,16 +40,18 @@ std::string AESENC::Decryption(std::string message) {
 	// Start bit to encrypt
 	int postion = 0;
 
-	char k[AES_BLOCK_SIZE];
-	for (int i = 0; i < AES_BLOCK_SIZE; i++)k[i] = message[i];
+	char *k = new char[message.size() + 1];
+	message.copy(k, message.size() + 1);
+	k[message.size()] = '\n';
+
 	int bytes_read = sizeof(message)-1;
 
 	// Encrypt Message .
 	AES_cbc_encrypt((unsigned char *)k, outdata, bytes_read, &key, ivec, AES_DECRYPT);
 
-	std::string enc;
-	for (int i = 0; i < sizeof(outdata); i++)enc[i] = outdata[i];
+	std::stringstream enc;
+	for (int i = 0; i < AES_BLOCK_SIZE; i++)
+		enc << outdata[i];
 
-
-	return enc;
+	return enc.str();
 }

@@ -11,3 +11,4 @@ C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Se
 C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
 C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Server\Server\obj\Debug\Server.exe
 C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Server\Server\obj\Debug\Server.pdb
+C:\Users\mohsen\Documents\Visual Studio 2017\Projects\ServerClient\OneTimePad\Server\Server\obj\Debug\Server.csprojAssemblyReference.cache
